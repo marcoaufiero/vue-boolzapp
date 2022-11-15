@@ -17,4 +17,15 @@
     height: 90%;
     width: 80%;
     background-color: grey;
+    display: flex;
+}
+
+.left-container{
+    width: 35%;
+    background-color: white;
+}
+
+.right-container{
+    width: 65%;
+    background-color: lightgrey;
 }
