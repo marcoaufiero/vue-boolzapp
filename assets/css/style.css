@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    color: grey;
+}
+
 .container{
     height: 100vh;
     background: rgb(0,150,136);
@@ -54,13 +58,46 @@
     margin-right: 10px;
 }
 
+.contacts-search-section{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+
+.searchbar-style{
+    width: 90%;
+    height: 100%;
+    border: none;
+}
+
+.search-btn{
+    width: 10%;
+    height: 100%;
+    border: none;
+    background-color: white;
+    border-right: 2px solid #FAFAFA;
+}
+
 .img-box{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
+}
+
+.bell-box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-img{
@@ -69,7 +106,7 @@
     border-radius: 50%;
 }
 
-.fa-solid{
+.icons-box > *{
     margin-right: 20px;
     font-size: 1.3rem;
     color: #B1B1B1;
@@ -77,5 +114,10 @@
 
 .fa-bell-slash{
     color: #8EDAFC;
-    padding: 15px 11px;
+    font-size: 1.2rem;
+}
+
+.fa-magnifying-glass{
+    color: #B1B1B1;
+    font-size: 1rem;
 }
