@@ -11,6 +11,18 @@ a{
     color: grey;
 }
 
+.d-flex{
+    display: flex;
+}
+
+.f-align-center{
+    align-items: center;
+}
+
+.margin-left-10{
+    margin-left: 10px;
+}
+
 .container{
     height: 100vh;
     background: rgb(0,150,136);
@@ -32,11 +44,14 @@ a{
     background-color: white;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid lightgrey;
 }
 
 .right-container{
     width: 65%;
     background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile-section{
@@ -92,7 +107,6 @@ a{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -127,5 +141,5 @@ a{
 
 .fa-magnifying-glass{
     color: #B1B1B1;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
