@@ -7,6 +7,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* COMMONS */
+
 a{
     color: grey;
 }
@@ -152,7 +154,13 @@ a{
 .chat-list-section{
     flex-grow: 1;
     background-color: #FAFAFA;
-    
+}
+
+.contact-card{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+    padding: 10px;
 }
 
 /* RIGHT CONTAINER */
@@ -164,13 +172,12 @@ a{
     flex-direction: column;
 }
 
-.fa-magnifying-glass{
+.search-btn .fa-magnifying-glass{
     color: #B1B1B1;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 /* CHAT BOX */
-
 
 .chat-box{
     flex-grow: 1;

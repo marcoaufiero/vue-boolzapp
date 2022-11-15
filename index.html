@@ -56,6 +56,21 @@
                     
                     <div class="chat-list-section">
 
+                        <div class="contact-card" v-for="(element, x) in contacts">
+                            <div class="d-flex">
+                                <div class="img-box">
+                                    <img class="profile-img" :src="contacts[x].avatar" alt="">
+                                </div>
+                                <div class="margin-left-10">
+                                    <span>{{contacts[x].name}}</span>
+                                    <p>Ultimo messaggio inviato</p>
+                                </div>
+                            </div>
+                            <div>
+                                12:00
+                            </div>
+                        </div>
+
                     </div>
                 
                 </div>
