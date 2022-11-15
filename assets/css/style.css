@@ -54,6 +54,17 @@ a{
     flex-direction: column;
 }
 
+.chat-box{
+    flex-grow: 1;
+    background-image: url(../img/mine.jpg);
+    background-repeat: repeat;
+}
+
+.send-message-section{
+    height: 70px;
+    background-color: #F3EEEA;
+}
+
 .profile-section{
     height: 70px;
     display: flex;
@@ -92,15 +103,17 @@ a{
 .searchbar-style{
     width: 90%;
     height: 100%;
-    border: none;
+    border: 1px solid #ebeaea;
 }
 
 .search-btn{
     width: 10%;
     height: 100%;
-    border: none;
+    border: 1px solid #ebeaea;
     background-color: white;
     border-right: 2px solid #FAFAFA;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .img-box{
