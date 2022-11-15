@@ -11,6 +11,8 @@ a{
     color: grey;
 }
 
+/* UTILITIES */
+
 .d-flex{
     display: flex;
 }
@@ -31,6 +33,8 @@ a{
     margin-left: 10px;
 }
 
+/* CONTAINER */
+
 .container{
     height: 100vh;
     background: rgb(0,150,136);
@@ -47,6 +51,8 @@ a{
     display: flex;
 }
 
+/* LEFT CONTAINER */
+
 .left-container{
     width: 35%;
     background-color: white;
@@ -55,6 +61,102 @@ a{
     border-right: 1px solid lightgrey;
 }
 
+/* PROFILE SECTION */
+
+.profile-section{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #EAEAEA;
+}
+
+.img-box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.icons-box > *{
+    margin-right: 20px;
+    font-size: 1.3rem;
+    color: #B1B1B1;
+}
+
+/* NOTIFICATION SECTION */
+
+.notifications-section{
+    height: 80px;
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.notifications-section > *{
+    margin-right: 10px;
+}
+
+.bell-box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bell-slash{
+    color: #8EDAFC;
+    font-size: 1.2rem;
+}
+
+/* CONTACT SEARCH SECTION */
+
+.contacts-search-section{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+
+.search-btn{
+    width: 10%;
+    height: 100%;
+    border: 1px solid #ebeaea;
+    background-color: white;
+    border-right: 2px solid #FAFAFA;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.searchbar-style-1{
+    width: 90%;
+    height: 100%;
+    border: 1px solid #ebeaea;
+    padding-left: 10px;
+}
+
+/* CHAT LIST SECTION */
+
+.chat-list-section{
+    flex-grow: 1;
+    background-color: #FAFAFA;
+    
+}
+
+/* RIGHT CONTAINER */
+
 .right-container{
     width: 65%;
     background-color: lightgrey;
@@ -62,11 +164,21 @@ a{
     flex-direction: column;
 }
 
+.fa-magnifying-glass{
+    color: #B1B1B1;
+    font-size: 1.3rem;
+}
+
+/* CHAT BOX */
+
+
 .chat-box{
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
     background-repeat: repeat;
 }
+
+/* SEND MESSAGE SECTION */
 
 .send-message-section{
     height: 70px;
@@ -83,47 +195,6 @@ a{
     margin: 0 20px;
 }
 
-.profile-section{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: #EAEAEA;
-}
-
-.notifications-section{
-    height: 80px;
-    background-color: #8EDAFC;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.notifications-section > *{
-    margin-right: 10px;
-}
-
-.contacts-search-section{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #FAFAFA;
-}
-
-.chat-list-section{
-    flex-grow: 1;
-    background-color: #FAFAFA;
-    
-}
-
-.searchbar-style-1{
-    width: 90%;
-    height: 100%;
-    border: 1px solid #ebeaea;
-}
-
 .searchbar-style-2{
     width: 100%;
     height: 100%;
@@ -132,53 +203,12 @@ a{
     padding-left: 20px;
 }
 
-.search-btn{
-    width: 10%;
-    height: 100%;
-    border: 1px solid #ebeaea;
-    background-color: white;
-    border-right: 2px solid #FAFAFA;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
 
-.img-box{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    vertical-align: middle;
-}
 
-.bell-box{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.profile-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
 
-.icons-box > *{
-    margin-right: 20px;
-    font-size: 1.3rem;
-    color: #B1B1B1;
-}
 
-.fa-bell-slash{
-    color: #8EDAFC;
-    font-size: 1.2rem;
-}
 
-.fa-magnifying-glass{
-    color: #B1B1B1;
-    font-size: 1.3rem;
-}
+
+
+
