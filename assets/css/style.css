@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: rgb(0,150,136);
+    background: linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(217,219,212,1) 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container{
+    height: 90%;
+    width: 80%;
+    background-color: grey;
+}
