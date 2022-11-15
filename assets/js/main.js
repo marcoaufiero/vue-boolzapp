@@ -1,6 +1,8 @@
 var app = new Vue({
     el: '#app',
     data: {
+        selectedContact: 0,
+        
         contacts: [
             {
                 name: 'Michele',
@@ -166,7 +168,13 @@ var app = new Vue({
         ]
     },
 
-    methods: {
+    beforeUpdate(){
+        
+    },
 
+    methods: {
+        selectContact(x){
+            this.selectedContact = x
+        }
     }
 })
