@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;500;600;700;800&family=Poppins&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -28,4 +31,33 @@
 .right-container{
     width: 65%;
     background-color: lightgrey;
+}
+
+.profile-section{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #EAEAEA;
+}
+
+.img-box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.fa-solid{
+    margin-right: 20px;
+    font-size: 1.3rem;
+    color: #B1B1B1;
 }
