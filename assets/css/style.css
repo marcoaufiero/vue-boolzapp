@@ -42,12 +42,25 @@
     background-color: #EAEAEA;
 }
 
+.notifications-section{
+    height: 80px;
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.notifications-section > *{
+    margin-right: 10px;
+}
+
 .img-box{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
+    background-color: white;
 }
 
 .profile-img{
@@ -60,4 +73,9 @@
     margin-right: 20px;
     font-size: 1.3rem;
     color: #B1B1B1;
+}
+
+.fa-bell-slash{
+    color: #8EDAFC;
+    padding: 15px 11px;
 }
