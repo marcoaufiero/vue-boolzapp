@@ -30,6 +30,8 @@ a{
 .left-container{
     width: 35%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-container{
@@ -64,6 +66,12 @@ a{
     align-items: center;
     padding: 10px;
     background-color: #FAFAFA;
+}
+
+.chat-list-section{
+    flex-grow: 1;
+    background-color: #FAFAFA;
+    
 }
 
 .searchbar-style{
