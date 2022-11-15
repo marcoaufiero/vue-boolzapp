@@ -96,6 +96,12 @@
                 
                     <div class="chat-box">
 
+                        <div class="text-line" v-for="(message, y) in contacts[selectedContact].messages">
+                            <div class="message-box" :class="(message.status == 'sent') ? 'message-sent' : 'message-received' " >
+                                <span>{{message.message}}</span>
+                            </div>
+                        </div>
+
                     </div>
                     
                     <div class="send-message-section">

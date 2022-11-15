@@ -186,6 +186,28 @@ a{
     background-repeat: repeat;
 }
 
+.text-line{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.message-box{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message-sent{
+    align-self: flex-end;
+    background-color: #D5F9BA;
+}
+
+.message-received{
+    background-color: white;
+}
+
+
 /* SEND MESSAGE SECTION */
 
 .send-message-section{
