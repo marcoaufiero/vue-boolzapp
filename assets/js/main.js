@@ -208,7 +208,19 @@ var app = new Vue({
             },1000)
         },
 
+        timeDisplay(time){
+            console.log(time)
+            time = time.split(' ').slice(1);
+            console.log(time)
+            time = time[0].split(':').slice(0, 2);
+            console.log(time)
+            return time.join(':')
+        }
+
+
+
     },
 
+   
     
 })

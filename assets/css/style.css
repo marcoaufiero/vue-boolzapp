@@ -197,6 +197,8 @@ a{
     width: 30%;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .message-sent{
@@ -206,6 +208,12 @@ a{
 
 .message-received{
     background-color: white;
+}
+
+.message-time{
+    align-self: flex-end;
+    font-size: 0.6rem;
+    font-weight: 600;
 }
 
 /* SEND MESSAGE SECTION */

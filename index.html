@@ -99,6 +99,7 @@
                         <div class="text-line" v-for="(message, y) in contacts[selectedContact].messages">
                             <div class="message-box" :class="(message.status == 'sent') ? 'message-sent' : 'message-received' " >
                                 <span>{{message.message}}</span>
+                                <span class="message-time">{{timeDisplay(message.date)}}</span>
                             </div>
                         </div>
 
