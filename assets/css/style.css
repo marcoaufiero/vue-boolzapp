@@ -181,9 +181,10 @@ a{
 /* CHAT BOX */
 
 .chat-box{
-    flex-grow: 1;
+    height: calc(100% - 140px);
     background-image: url(../img/mine.jpg);
     background-repeat: repeat;
+    overflow: auto;
 }
 
 .text-line{
