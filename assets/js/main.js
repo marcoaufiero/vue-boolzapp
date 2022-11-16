@@ -180,11 +180,11 @@ var app = new Vue({
         
         cpuMessage(){
             let newCpuMessage = {
-                message : 'ok',
-                status: 'received'
-            }
+                 message : 'ok',
+                 status: 'received'
+             }
 
-            this.contacts[this.selectedContact].messages.push(newCpuMessage)
+             this.contacts[this.selectedContact].messages.push(newCpuMessage)
         },
 
         sendMessage(){
@@ -196,7 +196,9 @@ var app = new Vue({
             this.contacts[this.selectedContact].messages.push(newMessage)
             this.inputText = ''
 
-            setTimeout( this.cpuMessage(), 2000)
+            setTimeout(() =>{
+                this.cpuMessage()
+            },1000)
         },
 
     },
