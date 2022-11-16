@@ -176,6 +176,7 @@ var app = new Vue({
             }else{
                 this.contacts[x].visible = false;
             }
+        
         });
         
     },
@@ -186,16 +187,31 @@ var app = new Vue({
         },
         
         cpuMessage(){
+            
+            let myDate = new Date();
+            let currentDate = `${myDate.getDay()}/${myDate.getMonth()}/${myDate.getFullYear()}`;
+            let currentTime = `${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`
+            let currentData = `${currentDate} ${currentTime}`
+            
             let newCpuMessage = {
-                 message : 'ok',
-                 status: 'received'
+                date: currentData,
+                message : 'ok',
+                status: 'received'
              }
 
              this.contacts[this.selectedContact].messages.push(newCpuMessage)
         },
 
         sendMessage(){
+            
+            let myDate = new Date();
+            let currentDate = `${myDate.getDay()}/${myDate.getMonth()}/${myDate.getFullYear()}`;
+            let currentTime = `${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`
+            let currentData = `${currentDate} ${currentTime}`
+
+            
             let newMessage = {
+                date: currentData,
                 message: this.inputText,
                 status: 'sent'
             }
@@ -209,15 +225,11 @@ var app = new Vue({
         },
 
         timeDisplay(time){
-            console.log(time)
+            
             time = time.split(' ').slice(1);
-            console.log(time)
             time = time[0].split(':').slice(0, 2);
-            console.log(time)
             return time.join(':')
         }
-
-
 
     },
 
