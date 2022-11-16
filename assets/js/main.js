@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         selectedContact: 0,
         inputText: '',
+        contactFilter: '',
         contacts: [
             {
                 name: 'Michele',
@@ -177,6 +178,15 @@ var app = new Vue({
             this.selectedContact = x
         },
         
+        cpuMessage(){
+            let newCpuMessage = {
+                message : 'ok',
+                status: 'received'
+            }
+
+            this.contacts[this.selectedContact].messages.push(newCpuMessage)
+        },
+
         sendMessage(){
             let newMessage = {
                 message: this.inputText,
@@ -185,6 +195,8 @@ var app = new Vue({
             
             this.contacts[this.selectedContact].messages.push(newMessage)
             this.inputText = ''
+
+            setTimeout( this.cpuMessage(), 2000)
         },
 
     },
