@@ -170,6 +170,13 @@ var app = new Vue({
     },
 
     beforeUpdate(){
+        this.contacts.forEach( (elem, x) => {
+            if(this.contacts[x].name.includes(this.contactFilter) || this.contactFilter == ''){
+                this.contacts[x].visible = true;
+            }else{
+                this.contacts[x].visible = false;
+            }
+        });
         
     },
 
