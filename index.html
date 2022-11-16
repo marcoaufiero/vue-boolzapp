@@ -111,7 +111,7 @@
                         </div>
                         
                         <div class="f-grow h-100">
-                            <input type="text" class="searchbar-style-2" placeholder="Scrivi un messaggio">
+                            <input type="text" class="searchbar-style-2" placeholder="Scrivi un messaggio" v-model="inputText" @keyup.enter="sendMessage()">
                         </div>
                         
                         <div>

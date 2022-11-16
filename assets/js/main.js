@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         selectedContact: 0,
-        
+        inputText: '',
         contacts: [
             {
                 name: 'Michele',
@@ -175,6 +175,19 @@ var app = new Vue({
     methods: {
         selectContact(x){
             this.selectedContact = x
-        }
-    }
+        },
+        
+        sendMessage(){
+            let newMessage = {
+                message: this.inputText,
+                status: 'sent'
+            }
+            
+            this.contacts[this.selectedContact].messages.push(newMessage)
+            this.inputText = ''
+        },
+
+    },
+
+    
 })
