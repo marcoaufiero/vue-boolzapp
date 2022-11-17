@@ -176,7 +176,6 @@ var app = new Vue({
             }else{
                 this.contacts[x].visible = false;
             }
-        
         });
         
     },
@@ -229,10 +228,11 @@ var app = new Vue({
             time = time.split(' ').slice(1);
             time = time[0].split(':').slice(0, 2);
             return time.join(':')
+        },
+
+        lastMessage(x){
+            return (this.contacts[x].messages.length) - 1;
         }
 
     },
-
-   
-    
 })

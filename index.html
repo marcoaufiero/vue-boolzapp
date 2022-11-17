@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="margin-left-10">
                                     <span>{{contacts[x].name}}</span>
-                                    <p>Ultimo messaggio inviato</p>
+                                    <p>{{contacts[x].messages[lastMessage(x)].message}}</p>
                                 </div>
                             </div>
                             <div>
