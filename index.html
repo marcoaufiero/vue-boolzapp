@@ -56,17 +56,17 @@
                     
                     <div class="chat-list-section">
 
-                        <div class="contact-card" v-for="(element, x) in contacts" @click="selectContact(x)" v-show="element.visible == true">
+                        <div class="contact-card" v-for="(element, x) in contacts" @click="selectContact(x)" v-show="element.visible == true" :class="(selectedContact == x) ? 'active-contact' : '' ">
                             <div class="d-flex">
                                 <div class="img-box">
                                     <img class="profile-img" :src="contacts[x].avatar" alt="">
                                 </div>
                                 <div class="margin-left-10">
-                                    <span>{{contacts[x].name}}</span>
-                                    <p>{{contacts[x].messages[lastMessage(x)].message}}</p>
+                                    <span class="contact-name">{{contacts[x].name}}</span>
+                                    <p class="contact-message">{{contacts[x].messages[lastMessage(x)].message}}</p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="contact-time">
                                 {{timeDisplay(contacts[x].messages[lastMessage(x)].date)}}
                             </div>
                         </div>
