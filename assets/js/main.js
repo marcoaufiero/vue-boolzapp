@@ -185,15 +185,19 @@ var app = new Vue({
             this.selectedContact = x
         },
         
+        getTime(){
+            let myDate = new Date().toLocaleDateString('it-EU');
+            let myTime = new Date().toLocaleTimeString('it-EU');
+            console.log(myDate)
+            console.log(myTime)
+            let currentData = `${myDate} ${myTime}`
+            return currentData
+        },
+
         cpuMessage(){
             
-            let myDate = new Date();
-            let currentDate = `${myDate.getDay()}/${myDate.getMonth()}/${myDate.getFullYear()}`;
-            let currentTime = `${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`
-            let currentData = `${currentDate} ${currentTime}`
-            
             let newCpuMessage = {
-                date: currentData,
+                date: this.getTime(),
                 message : 'ok',
                 status: 'received'
              }
@@ -203,14 +207,8 @@ var app = new Vue({
 
         sendMessage(){
             
-            let myDate = new Date();
-            let currentDate = `${myDate.getDay()}/${myDate.getMonth()}/${myDate.getFullYear()}`;
-            let currentTime = `${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`
-            let currentData = `${currentDate} ${currentTime}`
-
-            
             let newMessage = {
-                date: currentData,
+                date: this.getTime(),
                 message: this.inputText,
                 status: 'sent'
             }
